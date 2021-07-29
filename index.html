@@ -21,37 +21,50 @@
         </header>
         <hr>
         <section class="main">
-            <div class="contain-img">
-                <img src="./imgs/cutee1.jpg" id="cutee1" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cutee1.jpg" class="styleImg" id="cutee1" onclick="showCurrentImg(0)">
             </div>
-            <div class="contain-img">
-                <img src="./imgs/cute2.jpg" id="cutee2" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cute2.jpg" class="styleImg" id="cutee2" onclick="showCurrentImg(1)">
             </div>
-            <div class="contain-img">
-                <img src="./imgs/cutee10.jpg" id="cutee10" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cutee10.jpg" class="styleImg" id="cutee10" onclick="showCurrentImg(2)">
             </div>
-            <div class="contain-img">
-                <img src="./imgs/cutee5.jpg" id="cutee5" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cutee5.jpg" class="styleImg" id="cutee5" onclick="showCurrentImg(3)">
             </div>
-            <div class="contain-img">
-                <img src="./imgs/cutee9.jpg" id="cutee9" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cutee9.jpg" class="styleImg" id="cutee9" onclick="showCurrentImg(4)">
             </div>
-            <div class="contain-img">
-                <img src="./imgs/cutee6.jpg" id="cutee6" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cutee6.jpg" class="styleImg" id="cutee6" onclick="showCurrentImg(5)">
             </div>
-            <div class="contain-img">
-                <img src="./imgs/cutee8.jpg" id="cutee8" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cutee8.jpg" class="styleImg" id="cutee8" onclick="showCurrentImg(6)">
             </div>
-            <div class="contain-img">
-                <img src="./imgs/cutee7.jpg" id="cutee7" onclick="onClick(this)">
+            <div class="contain-img mySlides">
+                <img src="./imgs/cutee7.jpg" class="styleImg" id="cutee7" onclick="showCurrentImg(7)">
             </div>
 
             <!-- The Modal -->
 
-            <div id="modal01" class="modal" onclick="this.style.display='none'">
-                <div class="modal-content">
-                    <img id="img01" class="img-in-modal">
+            <div id="modal01" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&#10006;</span>
+
+                <div class="contain-gallery">
+                    <div class="modal-content">
+                        <img id="img01" class="img-in-modal">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <div class="prev"  onclick="plusSlides(-1)">
+                        <a>&#10094;</a>
+                    </div>
+                    <div class="next"  onclick="plusSlides(1)">
+                        <a>&#10095;</a>
+                    </div>
                 </div>
+                
             </div>
 
         </section>
